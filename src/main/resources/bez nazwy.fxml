@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="weatherapp.controllers.MainController">
+   <children>
+      <Button id="enterButton" fx:id="enterButton" layoutX="491.0" layoutY="344.0" mnemonicParsing="false" text="Podaj miasto">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.5192307692307693">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#46bf1d" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <TextField id="nameButton" fx:id="nameButton" layoutX="300.0" layoutY="344.0" promptText="Nazwa miasta" />
+      <TextArea id="textField" fx:id="textField" layoutX="60.0" layoutY="32.0" prefHeight="200.0" prefWidth="415.0" style="-fx-background-color: red;">
+         <effect>
+            <SepiaTone level="0.48" />
+         </effect>
+      </TextArea>
+      <ProgressIndicator fx:id="progressload" layoutX="242.0" layoutY="106.0" visible="false" />
+      <Button fx:id="buttonStats" layoutX="510.0" layoutY="32.0" mnemonicParsing="false" text="Statistics">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.5192307692307693">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#46bf1d" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <JFXButton fx:id="exitButton" layoutX="25.0" layoutY="344.0" text="Exit">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.5288461538461539">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#c61010" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+   </children>
+</AnchorPane>
